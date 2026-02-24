@@ -1,4 +1,4 @@
-# 🩸 HemoScan AI  
+#  HemoScan AI  
 ### Anemia Detection & Risk Analysis System  
 
 HemoScan AI is a Machine Learning-powered Clinical Decision Support System designed to predict anemia using Complete Blood Count (CBC) parameters.  
@@ -7,7 +7,7 @@ The system analyzes hemoglobin levels and red blood cell indices to provide earl
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 Anemia is a widespread global health issue affecting millions of people. Early detection is essential to prevent complications.
 
@@ -23,14 +23,14 @@ This project demonstrates the application of Machine Learning in healthcare for 
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Manual screening of anemia can be time-consuming and dependent on clinical interpretation.  
 There is a need for an automated, scalable, and affordable screening tool that assists healthcare professionals in early anemia detection.
 
 ---
 
-## 💡 Proposed Solution
+## Proposed Solution
 
 We developed a machine learning model trained on CBC parameters to:
 
@@ -44,7 +44,7 @@ The system is deployed as a Streamlit web application for easy accessibility.
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -57,7 +57,7 @@ The system is deployed as a Streamlit web application for easy accessibility.
 
 ---
 
-## 📊 Input Parameters
+##  Input Parameters
 
 The system uses the following CBC parameters:
 
@@ -69,7 +69,7 @@ The system uses the following CBC parameters:
 
 ---
 
-## 📈 Model Workflow
+##  Model Workflow
 
 1. Data Cleaning & Preprocessing  
 2. Feature Scaling using StandardScaler  
@@ -80,7 +80,7 @@ The system uses the following CBC parameters:
 
 ---
 
-## 🔍 Risk Classification Logic
+##  Risk Classification Logic
 
 | Probability | Risk Level |
 |-------------|------------|
@@ -91,5 +91,17 @@ The system uses the following CBC parameters:
 
 ---
 
-## 📂 Project Structure
-
+##  Project Structure
+HemoScan-AI/
+│── app.py
+│── model_training.py
+│── requirements.txt
+│── README.md
+│
+├── model/
+│ ├── model.pkl
+│ ├── scaler.pkl
+│
+├── data/
+│ ├── anemia_dataset.csv
+│ ├── cleaned_anemia_dataset.csv

@@ -91,17 +91,88 @@ The system uses the following CBC parameters:
 
 ---
 
-##  Project Structure
-HemoScan-AI/
-│── app.py
-│── model_training.py
-│── requirements.txt
-│── README.md
-│
-├── model/
-│ ├── model.pkl
-│ ├── scaler.pkl
-│
-├── data/
-│ ├── anemia_dataset.csv
-│ ├── cleaned_anemia_dataset.csv
+ Project Structure 
+Step 1: Main Application File
+
+app.py
+This is the Streamlit web application file.
+It handles:
+
+User input
+
+Risk prediction
+
+Safety recommendations
+
+Graph visualization
+
+Clinical receipt generation
+
+Step 2: Model Training Script
+
+model_training.py
+This file:
+
+Loads the dataset
+
+Performs preprocessing
+
+Applies feature scaling
+
+Trains the Logistic Regression model
+
+Saves the trained model (model.pkl)
+
+Saves the scaler (scaler.pkl)
+
+Step 3: Model Directory
+
+model/ folder
+This folder stores:
+
+model.pkl → Trained machine learning model
+
+scaler.pkl → StandardScaler used during training
+
+These files are required for prediction inside the web app.
+
+Step 4: Dataset Directory
+
+data/ folder
+Contains:
+
+anemia_dataset.csv → Original dataset
+
+cleaned_anemia_dataset.csv → Preprocessed dataset used for training
+
+Step 5: Requirements File
+
+requirements.txt
+Contains all required Python libraries:
+
+Streamlit
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib
+
+Used to install dependencies before running the project.
+
+Step 6: Documentation
+
+README.md
+Contains:
+
+Project overview
+
+Setup instructions
+
+Features
+
+Business impact
+
+Author information
